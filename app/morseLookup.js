@@ -1,4 +1,4 @@
-export const morseLookup = {
+const morseLookup = {
   A: ".- ",
   B: "-... ",
   C: "-.-. ",
@@ -46,4 +46,14 @@ export const morseLookup = {
   "-": "-....- ",
   "/": "-..-. ",
   "=": "-...- ",
+};
+
+export const translate = (str) => {
+  return str
+    .toUpperCase()
+    .split("")
+    .map((char) => {
+      return morseLookup[char];
+    })
+    .join("");
 };
