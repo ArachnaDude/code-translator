@@ -31,7 +31,7 @@ export default function Home() {
       >
         {isHoveredH2 ? morseText : englishText}
       </h2>
-      <p>Hello World</p>
+      <p>Translate English into Morse Code</p>
 
       <button
         onMouseEnter={handleMouseEnterButton}
