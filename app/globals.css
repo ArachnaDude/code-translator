@@ -5,3 +5,26 @@
 * {
   background-color: rgb(128, 128, 128);
 }
+
+.morse-code {
+  font-size: 35px;
+  position: relative;
+}
+
+.morse-code::before {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 0.25rem;
+  display: none;
+}
+
+.morse-code:hover::before {
+  display: block;
+  font-size: 20px;
+}
