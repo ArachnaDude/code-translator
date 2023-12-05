@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
   background-color: rgb(128, 128, 128);
-}
+} */
 
 .morse-code {
   font-size: 35px;
@@ -27,4 +27,13 @@
 .morse-code:hover::before {
   display: block;
   font-size: 20px;
+}
+
+button {
+  border: solid black 2px;
+  background-color: red;
+  margin: 10px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 14px;
+  width: 150px;
 }
