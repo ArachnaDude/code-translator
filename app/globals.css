@@ -6,12 +6,7 @@
   background-color: rgb(128, 128, 128);
 } */
 
-.morse-code {
-  font-size: 35px;
-  position: relative;
-}
-
-.morse-code::before {
+/* .morse-code::before {
   content: attr(title);
   position: absolute;
   bottom: 100%;
@@ -26,14 +21,21 @@
 
 .morse-code:hover::before {
   display: block;
-  font-size: 20px;
-}
+  font-size: 20px; */
+/* } */
 
 button {
   border: solid black 2px;
-  background-color: red;
   margin: 10px;
   padding: 10px 20px 10px 20px;
   border-radius: 14px;
   width: 150px;
+}
+
+button[type="submit"] {
+  background-color: grey;
+}
+
+button[type="reset"] {
+  background-color: rgb(132, 139, 145);
 }
