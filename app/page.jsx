@@ -39,9 +39,7 @@ export default function Home() {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    const morseText = translate(input);
-    const textArea = document.getElementById("translator");
-    textArea.value = morseText;
+    setInput(translate(input));
   };
 
   const handleClear = (event) => {
@@ -72,7 +70,11 @@ export default function Home() {
           onChange={handleChange}
         ></textarea>{" "}
         <br />
-        <button type="submit">
+        <button
+          type="submit"
+          onMouseEnter={handleMouseEnterSubmitButton}
+          onMouseLeave={handleMouseLeaveSubmitButton}
+        >
           {isHoveredSubmitButton ? morseSubmitButton : buttonSubmitText}
         </button>
         <button
