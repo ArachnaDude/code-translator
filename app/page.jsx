@@ -42,8 +42,7 @@ export default function Home() {
     setInput(translate(input));
   };
 
-  const handleClear = (event) => {
-    console.log("cleared");
+  const handleClear = () => {
     setInput("");
   };
 
@@ -58,7 +57,7 @@ export default function Home() {
       </h2>
       <p>Translate English into Morse Code</p>
 
-      <form onSubmit={handleSubmit} onReset={handleClear}>
+      <form>
         <label htmlFor="translator"></label>
         <textarea
           className="border-4"
@@ -71,14 +70,14 @@ export default function Home() {
         ></textarea>{" "}
         <br />
         <button
-          type="submit"
+          onClick={handleSubmit}
           onMouseEnter={handleMouseEnterSubmitButton}
           onMouseLeave={handleMouseLeaveSubmitButton}
         >
           {isHoveredSubmitButton ? morseSubmitButton : buttonSubmitText}
         </button>
         <button
-          type="reset"
+          onClick={handleClear}
           onMouseEnter={handleMouseEnterClearButton}
           onMouseLeave={handleMouseLeaveClearButton}
         >
