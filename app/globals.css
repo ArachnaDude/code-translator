@@ -30,12 +30,5 @@ button {
   padding: 10px 20px 10px 20px;
   border-radius: 14px;
   width: 150px;
-}
-
-button[type="submit"] {
   background-color: grey;
-}
-
-button[type="reset"] {
-  background-color: rgb(132, 139, 145);
 }
